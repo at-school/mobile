@@ -5,8 +5,8 @@
 
 #### Future Plans: ####
 * 0.1.1 Release - Improved UX and UI to make facial upload easier for consumers. Will fill in the currently empty Dashboard with updates from classes, aswell as add a sibebar with access to classroom routes.
-* 0.1.2 Release - Working direct and thread messaging system with real time messaging using web sockets aswell as an integrated email route.
-* 0.2.x Release - After emplying beta testers, improve UX and UI to make design seamless.
+* 0.1.2 Release - Working direct and thread messaging system with real time messaging using web sockets as well as an integrated email route.
+* 0.2.x Release - After employing beta testers, improve UX and UI to make design seamless.
 
 Welcome to **@ School**'s single web app **Beta**!
 
@@ -35,18 +35,32 @@ Time that would have been otherwise spent re-implementing features in the mobile
 
 > Before running Mobile application be sure to run the [server](https://github.com/at-school/sever)
 
-1. `cd Mobile/api/auth.js`
+1. Go to https://snack.expo.io/@anhanhvina/github.com-at-school-mobile
 
-2. Change the IP addresses in lines **2** and **16** `https://<yourIPaddress>/auth/signin`
-3. `cd Mobile/api/camera.js`
-4. Change the IP addresses in lines **2** `https://<yourIPaddress>/camera/save`
-5. Now in order to test to mobile application you will need to create an account with [Expo](https://expo.io/)
-6. Install the expo app on any mobile device and sign in\
-7. run `npm install -g expo-cli`
-8. cd to `Mobile/` and run `yarn start`
-	<!-- <div style="width:50%">
-		<img src="https://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg" alt="">
-	</div> -->
-9. Now with you phone either follow the **link** or **QR code** provided in the terminal,and follow the instructions provided.
+2. In the right nav bar under the project click on `./api/ips.js`
 
-:open_mouth: Wow! Now you can test the coolest beta on GitHub.
+3. Open terminal and run:
+	1. `python3`
+	2. `>>> import socket`
+	3. `>>> socket.gethostbyname(socket.gethostname())`
+	4. save the output *ip address*
+
+4. Paste the ip address from step 2 into line one *ip* variable of  the `./api/ips.js` file.
+
+5. click save in the top right hand corner of the screen
+
+6. click run on the top nav
+
+	<img src="./imgs/expo.gif"></img>
+
+7. Install the Expo Client on the [app store](https://itunes.apple.com/us/app/expo-client/id982107779?mt=8) or [Android store](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_AU) on any mobile device. Create and account and sign in.
+
+8. Once Logged into the application navigate to the Projects screen and save the id at the bottom of the screen
+
+	<img style="width: 200px" src="./imgs/code.png"></img>
+
+9. Now click the link under *Recently in Development*
+
+	<img style="width: 200px" src="./imgs/link.png"></img>
+
+:open_mouth: Wow! Now you can test the coolest app make by school students.
